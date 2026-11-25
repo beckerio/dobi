@@ -1,0 +1,36 @@
+{
+ "noise_by_regime": {
+  "S_city_day": 0.07944977633215632,
+  "S_city_night": 0.0958655483907532,
+  "S_highway_day": 0.13847299311792144,
+  "S_highway_night": 0.26198660388738504,
+  "S_residential_day": 0.11851898414078865,
+  "S_residential_night": 0.2894689790073848
+ },
+ "noise_max": 0.2894689790073848,
+ "day_regimes_qualified": [
+  "S_city_day",
+  "S_highway_day",
+  "S_residential_day"
+ ],
+ "day_pairs": {
+  "S_city_day <> S_highway_day": {
+   "train": 1.137502231946065,
+   "val": 1.1732988539340097
+  },
+  "S_city_day <> S_residential_day": {
+   "train": 0.4166977200865787,
+   "val": 0.4363978317185428
+  },
+  "S_highway_day <> S_residential_day": {
+   "train": 1.1874376868918441,
+   "val": 1.213617523523768
+  }
+ },
+ "pairs_exceeding_noise_train": [
+  "S_city_day <> S_highway_day",
+  "S_city_day <> S_residential_day",
+  "S_highway_day <> S_residential_day"
+ ],
+ "decision": "scene"
+}

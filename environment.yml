@@ -1,0 +1,29 @@
+# Conda environment for DOBI (conda-forge and PyPI only).
+#   conda env create -f environment.yml && conda activate dobi && pip install --no-deps -e .
+# CPU-only machines: CONDA_OVERRIDE_CUDA="" conda env create -f environment.yml
+# Versions are the ones used for the paper results (Python 3.12, PyTorch 2.10).
+name: dobi
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - pip
+  - numpy=2.5.2
+  - pandas=3.0.0
+  - scipy=1.17.0
+  - matplotlib-base=3.10.8
+  - scikit-image=0.26.0
+  - scikit-learn=1.8.0
+  - pillow=12.0.0
+  - pyyaml=6.0.3
+  - tqdm=4.67.3
+  - pytorch=2.10.0
+  - torchvision=0.25.0
+  - imagemagick          # used through Wand by the degradation generator (motion blur, snow)
+  - pytest=9.0.2
+  - pip:
+      - opencv-python==4.13.0.92
+      - Wand==0.6.13
+      - imagecorruptions==1.1.2   # frost textures for the degradation generator (Apache-2.0)
+      - ultralytics==8.4.12       # AGPL-3.0; needed for feature extraction / detector inference only

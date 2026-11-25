@@ -1,0 +1,14 @@
+{
+ "data_file": "figB_regime_distance_agreement_data.npz",
+ "sha256": "eeb5d66a7759c65b114c9867fde503f000ef74e0acd6a561f95898c6914a0ce3",
+ "extracted_from": {
+  "paper_artifacts_extended_eval/run_20261011_182510_f7b65d/metrics/expB_matrices_and_curves.npz": "69dcdc06225974d9533a86546b4164affa4dacb705f5978366ae91fdfd6f2fc1",
+  "paper_artifacts_extended_eval/run_20261011_182510_f7b65d/metrics/expB_results.json": "a8ff8059b263de3f81a6f78b6777f9f0cb178bf9a0c4fa652ec53ced0550a88f"
+ },
+ "arrays": "per level (regime, severity): names, gt_test (= <level>__std_l2__gt_test), pred_pchip (= <level>__std_l2__pred_pchip), pair_class_upper (dobi.eval.extended.exp_b_equivalence.pair_class over np.triu_indices(n, 1)), eps (std_l2 tolerance), spearman (gt_vs_predicted, std_l2, adaptive_pchip) - exactly the inputs of the figB block of scripts/make_extended_eval_figures.py",
+ "regime_pair_counts": {
+  "cross_family": 108,
+  "within_family": 28,
+  "pristine_pair": 17
+ }
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+# local data locations and data
+configs/paths.yaml
+/data/
+/runs/
+/outputs/
+# weights are downloaded, not committed (see weights/README.md)
+weights/*.pt

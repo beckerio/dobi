@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dobi"
+version = "1.0.0"
+description = "Detector Operating Behavior Inference via Data-Space Sampling"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-or-later AND Apache-2.0"
+license-files = ["LICENSE", "LICENSES/Apache-2.0.txt", "NOTICE"]
+authors = [
+  { name = "Stefan Becker" },
+  { name = "Simon Weiss" },
+  { name = "Wolfgang Hübner" },
+]
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "scikit-learn",
+  "scikit-image",
+  "matplotlib",
+  "opencv-python",
+  "pillow",
+  "PyYAML",
+  "tqdm",
+  "torch",
+  "torchvision",
+  "Wand",
+  "imagecorruptions",
+  "ultralytics",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Repository = "https://github.com/beckerio/dobi"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]

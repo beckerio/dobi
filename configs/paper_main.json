@@ -1,0 +1,81 @@
+{
+  "_description": "FINAL main paper runs: linear vs PCHIP (only difference: interpolation), 60 epochs, seeds 0-2, K=16 uniform knots, log1p FPPI, best-validation-loss checkpoint; plus the image-independent mean_behavior baseline (evaluation only).",
+  "global": {
+    "db": "${dobi_db}",
+    "images_root": "${coco_mini_person_d}/data/train2017/images",
+    "eval_images_root": "${coco_mini_person_d}/data/test2017/images",
+    "weights": "weights/yolov10n.pt",
+    "save_strategy": "skip",
+    "project": "${tau_behavior_models}/paper",
+    "feature_cache": "${tau_behavior_models}/feature_cache",
+    "class_id": 0,
+    "iou_thr": 0.5,
+    "u_max": 2.0,
+    "imgsz": 640,
+    "variants_per_subset_train": 7836,
+    "variants_per_image_train": 0,
+    "variants_per_subset_val": 0,
+    "variants_per_image_val": 18,
+    "smart_sampling": true,
+    "batch_size": 64,
+    "epochs": 60,
+    "head_lr": 0.0001,
+    "num_workers": 0,
+    "split": "train",
+    "use_val": true,
+    "val_interval": 1,
+    "patience": 1000,
+    "hidden": 1024,
+    "mlp_layers": 2,
+    "seed": 0,
+    "head": "tau_behavior",
+    "interp": "pchip",
+    "n_knots": 16,
+    "knot_placement": "uniform",
+    "fppi_space": "log1p",
+    "n_tau_points": 201,
+    "eval_args": {
+      "threshold_eval": true,
+      "skip_paired_pristine": true,
+      "n_dense_tau": 1001,
+      "seed": 0,
+      "feature_cache": "${tau_behavior_models}/feature_cache"
+    }
+  },
+  "runs": [
+    {
+      "name": "tau_linear_s0",
+      "interp": "linear",
+      "seed": 0
+    },
+    {
+      "name": "tau_linear_s1",
+      "interp": "linear",
+      "seed": 1
+    },
+    {
+      "name": "tau_linear_s2",
+      "interp": "linear",
+      "seed": 2
+    },
+    {
+      "name": "tau_pchip_s0",
+      "interp": "pchip",
+      "seed": 0
+    },
+    {
+      "name": "tau_pchip_s1",
+      "interp": "pchip",
+      "seed": 1
+    },
+    {
+      "name": "tau_pchip_s2",
+      "interp": "pchip",
+      "seed": 2
+    },
+    {
+      "name": "mean_behavior",
+      "head": "mean_behavior"
+    }
+  ]
+}

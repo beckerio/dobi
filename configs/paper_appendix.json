@@ -1,0 +1,122 @@
+{
+  "_description": "FINAL appendix runs: PC1 behavior baseline (seeds 0-2) and leave-one-degradation-type-out generalization (PCHIP, seed 0; held-out type removed from training AND validation) with matching mean_behavior baselines.",
+  "global": {
+    "db": "${dobi_db}",
+    "images_root": "${coco_mini_person_d}/data/train2017/images",
+    "eval_images_root": "${coco_mini_person_d}/data/test2017/images",
+    "weights": "weights/yolov10n.pt",
+    "save_strategy": "skip",
+    "project": "${tau_behavior_models}/paper",
+    "feature_cache": "${tau_behavior_models}/feature_cache",
+    "class_id": 0,
+    "iou_thr": 0.5,
+    "u_max": 2.0,
+    "imgsz": 640,
+    "variants_per_subset_train": 7836,
+    "variants_per_image_train": 0,
+    "variants_per_subset_val": 0,
+    "variants_per_image_val": 18,
+    "smart_sampling": true,
+    "batch_size": 64,
+    "epochs": 60,
+    "head_lr": 0.0001,
+    "num_workers": 0,
+    "split": "train",
+    "use_val": true,
+    "val_interval": 1,
+    "patience": 1000,
+    "hidden": 1024,
+    "mlp_layers": 2,
+    "seed": 0,
+    "head": "tau_behavior",
+    "interp": "pchip",
+    "n_knots": 16,
+    "knot_placement": "uniform",
+    "fppi_space": "log1p",
+    "n_tau_points": 201,
+    "eval_args": {
+      "threshold_eval": true,
+      "skip_paired_pristine": true,
+      "n_dense_tau": 1001,
+      "seed": 0,
+      "feature_cache": "${tau_behavior_models}/feature_cache"
+    }
+  },
+  "runs": [
+    {
+      "name": "pc1_behavior_s0",
+      "head": "pc1_behavior",
+      "seed": 0
+    },
+    {
+      "name": "pc1_behavior_s1",
+      "head": "pc1_behavior",
+      "seed": 1
+    },
+    {
+      "name": "pc1_behavior_s2",
+      "head": "pc1_behavior",
+      "seed": 2
+    },
+    {
+      "name": "lodo_glass_blur_pchip_s0",
+      "exclude_regimes": [
+        "glass_blur_3_5"
+      ]
+    },
+    {
+      "name": "lodo_glass_blur_mean_behavior",
+      "head": "mean_behavior",
+      "eval_args": {
+        "threshold_eval": true,
+        "skip_paired_pristine": true,
+        "n_dense_tau": 1001,
+        "seed": 0,
+        "feature_cache": "${tau_behavior_models}/feature_cache",
+        "exclude_regimes": [
+          "glass_blur_3_5"
+        ]
+      }
+    },
+    {
+      "name": "lodo_gaussian_noise_pchip_s0",
+      "exclude_regimes": [
+        "gaussian_noise_3_5"
+      ]
+    },
+    {
+      "name": "lodo_gaussian_noise_mean_behavior",
+      "head": "mean_behavior",
+      "eval_args": {
+        "threshold_eval": true,
+        "skip_paired_pristine": true,
+        "n_dense_tau": 1001,
+        "seed": 0,
+        "feature_cache": "${tau_behavior_models}/feature_cache",
+        "exclude_regimes": [
+          "gaussian_noise_3_5"
+        ]
+      }
+    },
+    {
+      "name": "lodo_fog_pchip_s0",
+      "exclude_regimes": [
+        "fog_3_5"
+      ]
+    },
+    {
+      "name": "lodo_fog_mean_behavior",
+      "head": "mean_behavior",
+      "eval_args": {
+        "threshold_eval": true,
+        "skip_paired_pristine": true,
+        "n_dense_tau": 1001,
+        "seed": 0,
+        "feature_cache": "${tau_behavior_models}/feature_cache",
+        "exclude_regimes": [
+          "fog_3_5"
+        ]
+      }
+    }
+  ]
+}

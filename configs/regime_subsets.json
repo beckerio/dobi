@@ -1,0 +1,310 @@
+{
+ "clusters": [
+  {
+   "name": "pristine",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "pristine",
+       "severity_max": 0,
+       "severity_min": 0
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "brightness_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "brightness",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "contrast_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "contrast",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "defocus_blur_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "defocus_blur",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "fog_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "fog",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "frost_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "frost",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "gaussian_blur_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "gaussian_blur",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "gaussian_noise_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "gaussian_noise",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "glass_blur_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "glass_blur",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "impulse_noise_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "impulse_noise",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "jpeg_compression_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "jpeg_compression",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "motion_blur_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "motion_blur",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "pixelate_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "pixelate",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "saturate_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "saturate",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "shot_noise_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "shot_noise",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "snow_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "snow",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "spatter_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "spatter",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  },
+  {
+   "name": "speckle_noise_3_5",
+   "params": {
+    "degradation_filter": {
+     "include": [
+      {
+       "deg_name": "speckle_noise",
+       "severity_max": 5,
+       "severity_min": 3
+      }
+     ]
+    },
+    "mode": [
+     "degradation"
+    ]
+   }
+  }
+ ]
+}

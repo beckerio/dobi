@@ -1,0 +1,14 @@
+side,class (label version name),group,use
+GT,car,"vehicle (V-narrow, V-broad)",evaluated
+GT,truck,"vehicle (V-narrow, V-broad)",evaluated
+GT,bus,"vehicle (V-narrow, V-broad)",evaluated
+GT,train,vehicle (V-broad); ignore region (V-narrow),evaluated / ignore
+GT,motor,motorcycle: vehicle (V-broad); ignore region (V-narrow),evaluated / ignore
+GT,bike,bicycle: vehicle (V-broad); ignore region (V-narrow),evaluated / ignore
+GT,person,person,evaluated (N3)
+GT,rider,person,evaluated (N3)
+GT,"traffic light, traffic sign, lane, drivable area",-,not used
+detector (COCO),"car, truck, bus","vehicle (V-narrow, V-broad)",kept
+detector (COCO),"bicycle, motorcycle, train, boat, airplane",vehicle (V-broad only; COCO_LABELS),kept (V-broad) / discarded (V-narrow)
+detector (COCO),person,person,kept (N3)
+detector (COCO),all other 71 classes,-,discarded

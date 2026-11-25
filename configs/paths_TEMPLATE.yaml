@@ -1,0 +1,15 @@
+# DOBI data locations - template.
+# Copy to configs/paths.yaml (not tracked) or point $DOBI_PATHS to a file with this layout.
+# Keys left out fall back to $DOBI_DATA_ROOT/<default> (default data root: <repository>/data), see src/dobi/paths.py.
+#   in code:          P("<key>", "sub/path")
+#   in configs/*.json: "${<key>}/sub/path"   (resolved by dobi.paths.resolve)
+# Only the experiments that need a location read it; tables and figures need none of them.
+paths:
+  data_root: /path/to/data                                   # default root for everything below; also run outputs (runs/)
+  dobi_db: /path/to/data/dobi.db                             # detection database (read only)
+  databases_dir: /path/to/data                               # folder that contains dobi.db
+  coco_mini_person_d: /path/to/data/COCOMiniPerson-D         # data/<split>2017/images/<type>/deg_<s>/<base>.png, see DATA.md
+  tau_behavior_models: /path/to/data/TauBehavior             # paper/ (monitor checkpoints), feature_cache/
+  rq5_data_exp1: null                                        # continuous-probing experiments (not part of version 1)
+  rq5_data_exp2: null
+  bdd100k_root: null                                         # BDD100K (obtain from the official site; not redistributed)

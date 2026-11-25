@@ -1,0 +1,27 @@
+weather,timeofday,train,val
+clear,night,22884,3274
+clear,daytime,12454,1764
+overcast,daytime,7551,1039
+undefined,daytime,7029,994
+partly cloudy,daytime,4262,638
+snowy,daytime,2862,422
+rainy,daytime,2522,396
+snowy,night,2249,273
+rainy,night,2208,286
+clear,dawn/dusk,2004,307
+overcast,dawn/dusk,1147,182
+partly cloudy,dawn/dusk,570,95
+undefined,dawn/dusk,527,64
+undefined,night,442,66
+snowy,dawn/dusk,436,74
+rainy,dawn/dusk,328,55
+undefined,undefined,121,33
+overcast,night,72,18
+foggy,night,67,7
+partly cloudy,night,49,5
+foggy,daytime,48,5
+foggy,dawn/dusk,15,1
+rainy,undefined,12,1
+snowy,undefined,2,0
+clear,undefined,2,1
+total,,69863,10000

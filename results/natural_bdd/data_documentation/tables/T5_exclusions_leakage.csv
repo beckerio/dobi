@@ -1,0 +1,10 @@
+item,count,handling / result
+train images on disk without a label entry,137,not used (no labels)
+label entries without image (train / val),0,-
+image-name prefixes shared between official train and val,1,train images with that prefix excluded
+train images excluded because their prefix occurs in the test set (scene regimes),3,prefix fe189115
+prefixes in more than one part (N2 phase 2),0,leakage check passed
+prefixes in more than one part (N3),0,leakage check passed
+labelled images outside the six scene x time-of-day regimes (train+val),6816,"dawn/dusk, undefined, other scenes"
+images reaching the 300-detection cap (all classes),35002,43.8 %; truncated scores < 0.0080
+N3 test regimes below the size rule (>= 200 images and >= 500 persons),3,"descriptive only: S_highway_day, S_highway_night, S_residential_night"

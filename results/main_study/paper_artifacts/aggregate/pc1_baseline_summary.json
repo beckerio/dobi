@@ -1,0 +1,102 @@
+{
+  "behavior_vector": "[TPR(tau), FPR(tau), log1p FPPI(tau), Precision(tau)] on 201-point training tau grid",
+  "pca_fitted_on": "18 training regimes",
+  "per_seed": {
+    "0": {
+      "explained_variance_ratio_pc1": 0.8803827859708759,
+      "explained_variance_ratio_first5": [
+        0.8803827859708759,
+        0.10826636655517985,
+        0.007130109795017125,
+        0.0030772515778268424,
+        0.0008435007970370801
+      ],
+      "train_reconstruction_rmse_oracle_coefficient": 0.02938147437928484,
+      "test_reconstruction_rmse_oracle_coefficient": 0.029734564355183762,
+      "test_reconstruction_rmse_oracle_coefficient_per_regime": {
+        "pristine": 0.013786736371543365,
+        "brightness_3_5": 0.009052761018892993,
+        "contrast_3_5": 0.005372894770442852,
+        "defocus_blur_3_5": 0.02603236787588499,
+        "fog_3_5": 0.008770355467395508,
+        "frost_3_5": 0.015445171408040831,
+        "gaussian_blur_3_5": 0.02132825411287822,
+        "gaussian_noise_3_5": 0.02694470390191705,
+        "glass_blur_3_5": 0.024507484287380338,
+        "impulse_noise_3_5": 0.022165694134582012,
+        "jpeg_compression_3_5": 0.021745805393541907,
+        "motion_blur_3_5": 0.046004245371543885,
+        "pixelate_3_5": 0.08589702214958288,
+        "saturate_3_5": 0.007236478523295414,
+        "shot_noise_3_5": 0.027769960349408235,
+        "snow_3_5": 0.028790355079321015,
+        "spatter_3_5": 0.010688188593372977,
+        "speckle_noise_3_5": 0.024768365462691636
+      }
+    },
+    "1": {
+      "explained_variance_ratio_pc1": 0.8803827859708759,
+      "explained_variance_ratio_first5": [
+        0.8803827859708759,
+        0.10826636655517985,
+        0.007130109795017125,
+        0.0030772515778268424,
+        0.0008435007970370801
+      ],
+      "train_reconstruction_rmse_oracle_coefficient": 0.02938147437928484,
+      "test_reconstruction_rmse_oracle_coefficient": 0.029734564355183762,
+      "test_reconstruction_rmse_oracle_coefficient_per_regime": {
+        "pristine": 0.013786736371543365,
+        "brightness_3_5": 0.009052761018892993,
+        "contrast_3_5": 0.005372894770442852,
+        "defocus_blur_3_5": 0.02603236787588499,
+        "fog_3_5": 0.008770355467395508,
+        "frost_3_5": 0.015445171408040831,
+        "gaussian_blur_3_5": 0.02132825411287822,
+        "gaussian_noise_3_5": 0.02694470390191705,
+        "glass_blur_3_5": 0.024507484287380338,
+        "impulse_noise_3_5": 0.022165694134582012,
+        "jpeg_compression_3_5": 0.021745805393541907,
+        "motion_blur_3_5": 0.046004245371543885,
+        "pixelate_3_5": 0.08589702214958288,
+        "saturate_3_5": 0.007236478523295414,
+        "shot_noise_3_5": 0.027769960349408235,
+        "snow_3_5": 0.028790355079321015,
+        "spatter_3_5": 0.010688188593372977,
+        "speckle_noise_3_5": 0.024768365462691636
+      }
+    },
+    "2": {
+      "explained_variance_ratio_pc1": 0.8803827859708759,
+      "explained_variance_ratio_first5": [
+        0.8803827859708759,
+        0.10826636655517985,
+        0.007130109795017125,
+        0.0030772515778268424,
+        0.0008435007970370801
+      ],
+      "train_reconstruction_rmse_oracle_coefficient": 0.02938147437928484,
+      "test_reconstruction_rmse_oracle_coefficient": 0.029734564355183762,
+      "test_reconstruction_rmse_oracle_coefficient_per_regime": {
+        "pristine": 0.013786736371543365,
+        "brightness_3_5": 0.009052761018892993,
+        "contrast_3_5": 0.005372894770442852,
+        "defocus_blur_3_5": 0.02603236787588499,
+        "fog_3_5": 0.008770355467395508,
+        "frost_3_5": 0.015445171408040831,
+        "gaussian_blur_3_5": 0.02132825411287822,
+        "gaussian_noise_3_5": 0.02694470390191705,
+        "glass_blur_3_5": 0.024507484287380338,
+        "impulse_noise_3_5": 0.022165694134582012,
+        "jpeg_compression_3_5": 0.021745805393541907,
+        "motion_blur_3_5": 0.046004245371543885,
+        "pixelate_3_5": 0.08589702214958288,
+        "saturate_3_5": 0.007236478523295414,
+        "shot_noise_3_5": 0.027769960349408235,
+        "snow_3_5": 0.028790355079321015,
+        "spatter_3_5": 0.010688188593372977,
+        "speckle_noise_3_5": 0.024768365462691636
+      }
+    }
+  }
+}

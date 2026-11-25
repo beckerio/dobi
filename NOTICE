@@ -1,0 +1,19 @@
+DOBI - Detector Operating Behavior Inference via Data-Space Sampling
+Copyright 2026 The DOBI authors (Stefan Becker, Simon Weiss, Wolfgang Hübner)
+
+The files marked "SPDX-License-Identifier: Apache-2.0" are licensed under the Apache License, Version 2.0
+(LICENSES/Apache-2.0.txt). All other source files are licensed under the GNU Affero General Public License v3.0
+or later (LICENSE). See README.md (section "License") and THIRD_PARTY_NOTICES.md.
+
+This product includes software developed by third parties:
+
+* src/dobi/degradation/generator.py contains modified copies of the image corruption functions of
+  ImageNet-C by Dan Hendrycks and Thomas Dietterich, "Benchmarking Neural Network Robustness to Common
+  Corruptions and Perturbations", ICLR 2019, https://github.com/hendrycks/robustness
+  (Apache License 2.0), in the variant generalized to arbitrary image sizes as used by
+  Ali Harakeh and Steven Waslander, https://github.com/asharakeh/probdet (Apache License 2.0), and by
+  Claudio Michaelis et al., https://github.com/bethgelab/imagecorruptions (Apache License 2.0).
+  Modifications by the DOBI authors are listed in the header of that file (explicit parameters and random state,
+  continuous strength, frost textures loaded from the imagecorruptions package).
+* The frost textures used by the frost corruption are not included; they are loaded at run time from the
+  installed package imagecorruptions (Apache License 2.0).

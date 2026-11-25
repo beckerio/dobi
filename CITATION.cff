@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "DOBI: Detector Operating Behavior Inference via Data-Space Sampling"
+type: software
+license:
+  - Apache-2.0
+  - AGPL-3.0-or-later
+repository-code: "https://github.com/beckerio/dobi"
+authors:
+  - family-names: Becker
+    given-names: Stefan
+    affiliation: "Fraunhofer IOSB"
+    orcid: "https://orcid.org/0000-0001-7367-2519"
+  - family-names: Weiss
+    given-names: Simon
+    affiliation: "Fraunhofer IOSB"
+    orcid: "https://orcid.org/0009-0008-8171-9397"
+  - family-names: Hübner
+    given-names: Wolfgang
+    affiliation: "Fraunhofer IOSB"
+    orcid: "https://orcid.org/0000-0001-5634-6324"
+preferred-citation:
+  type: generic
+  title: "Detector Operating Behavior Inference via Data-Space Sampling"
+  authors:
+    - family-names: Becker
+      given-names: Stefan
+      affiliation: "Fraunhofer IOSB"
+    - family-names: Weiss
+      given-names: Simon
+      affiliation: "Fraunhofer IOSB"
+    - family-names: Hübner
+      given-names: Wolfgang
+      affiliation: "Fraunhofer IOSB"
+  year: 2026
+  publisher:
+    name: "arXiv"
+  doi: "10.48550/arXiv.ARXIV_ID"
+  url: "https://arxiv.org/abs/ARXIV_ID"
+  identifiers:
+    - type: other
+      value: "arXiv:ARXIV_ID"
+      description: "arXiv identifier (primary class cs.CV)"
