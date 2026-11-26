@@ -4,10 +4,10 @@
 """
 Extended DOBI evaluation (experiments A-D). Evaluation only: no training, no change to existing artifacts.
 
-    PYTHONPATH=src python src/dobi/eval/extended/run_extended_eval.py --out paper_artifacts_extended_eval/<run_id> --experiments A B C D
+    python -m dobi.eval.extended.run_extended_eval --out runs/main_study/extended_eval/<run_id> --experiments A B C D
 
 Every experiment refuses to overwrite its own outputs; the output directory must lie below
-paper_artifacts_extended_eval/.
+runs/main_study/extended_eval/.
 """
 from __future__ import annotations
 

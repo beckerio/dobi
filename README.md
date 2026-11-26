@@ -2,6 +2,10 @@
 
 Stefan Becker, Simon Weiss, Wolfgang Hübner
 
+Fraunhofer IOSB
+
+Paper: https://arxiv.org/abs/2611.34252
+
 ## Abstract
 
 A detector scores candidate detections, but the recall and false alarms at a given confidence threshold
@@ -121,7 +125,7 @@ python -m dobi.data.feature_cache --db $DB --images_root $D/train2017/images --o
 python experiments/main_study/scripts/run_paper_experiments.py --config configs/paper_main.json --stage both
 python -m dobi.eval.aggregate_paper_results --eval_root runs/main_study/eval --out runs/main_study/paper_artifacts
 python -m dobi.eval.run_execution_eval --db $DB --feature_cache $C/feature_cache --project $C/paper --old_eval_root runs/main_study/eval --old_artifacts runs/main_study/paper_artifacts --out runs/main_study/paper_artifacts_execution --n_boot 2000 --boot_seed 12345
-python -m dobi.eval.extended.run_extended_eval --out results/main_study/paper_artifacts_extended_eval/my_run
+python -m dobi.eval.extended.run_extended_eval --out runs/main_study/extended_eval/my_run
 ```
 
 `run_paper_experiments.py --dry-run` prints the training and evaluation commands of every run. Training and
@@ -191,10 +195,10 @@ If you use this code in academic work, please consider citing the following pape
   title         = {Detector Operating Behavior Inference via Data-Space Sampling},
   author        = {Stefan Becker and Simon Weiss and Wolfgang H{\"u}bner},
   year          = {2026},
-  eprint        = {ARXIV_ID},
+  eprint        = {2611.34252},
   archivePrefix = {arXiv},
   primaryClass  = {cs.CV},
-  url           = {https://arxiv.org/abs/ARXIV_ID}
+  url           = {https://arxiv.org/abs/2611.34252}
 }
 ```
 

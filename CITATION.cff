@@ -35,9 +35,9 @@ preferred-citation:
   year: 2026
   publisher:
     name: "arXiv"
-  doi: "10.48550/arXiv.ARXIV_ID"
-  url: "https://arxiv.org/abs/ARXIV_ID"
+  doi: "10.48550/arXiv.2611.34252"
+  url: "https://arxiv.org/abs/2611.34252"
   identifiers:
     - type: other
-      value: "arXiv:ARXIV_ID"
+      value: "arXiv:2611.34252"
       description: "arXiv identifier (primary class cs.CV)"

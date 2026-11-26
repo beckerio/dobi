@@ -39,7 +39,9 @@ DB = _P('dobi_db')
 FEATURE_CACHE = _P('tau_behavior_models', 'feature_cache')
 PROJECT = _P('tau_behavior_models', 'paper')
 TEST_IMAGES = _P('coco_mini_person_d', 'data/test2017/images')
-OUT_ROOT = 'results/main_study/paper_artifacts_extended_eval'
+# new runs go below runs/; the shipped run below results/ is read (and re-summarized) by the figure scripts
+OUT_ROOTS = ('runs/main_study/extended_eval', 'results/main_study/paper_artifacts_extended_eval')
+OUT_ROOT = OUT_ROOTS[0]
 
 CLASS_ID, IOU_THR, U_MAX, EVAL_N_POINTS, N_DENSE_TAU = 0, 0.5, 2.0, 201, 1001
 LEARNED = {"adaptive_linear": "tau_linear_s{}", "adaptive_pchip": "tau_pchip_s{}", "pc1_behavior": "pc1_behavior_s{}"}
@@ -52,11 +54,12 @@ TAU = np.linspace(0.0, 1.0, N_DENSE_TAU, dtype=np.float32)
 # output protection
 # ------------------------------------------------------------------
 def check_out_dir(out: Path) -> Path:
-    """Outputs may only go to a run directory below paper_artifacts_extended_eval/."""
+    """Run directories must lie below runs/main_study/extended_eval/ (new runs) or
+    results/main_study/paper_artifacts_extended_eval/ (the shipped run)."""
     out = Path(out).resolve()
-    root = Path(OUT_ROOT).resolve()
-    if root not in out.parents:
-        raise SystemExit(f"refusing to write outside {root}: {out}")
+    roots = [Path(r).resolve() for r in OUT_ROOTS]
+    if not any(r in out.parents for r in roots):
+        raise SystemExit(f"refusing to write outside {', '.join(map(str, roots))}: {out}")
     return out
 
 
